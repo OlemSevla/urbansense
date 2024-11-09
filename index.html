@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanSense - Site em Desenvolvimento</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen overflow-x-hidden">
+    <!-- Particles Background -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20 z-0"></div>
+
+    <nav class="relative z-10 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold hover:text-blue-400 transition-colors duration-300">
+                    <span class="animate-pulse text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400">UrbanSense</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-blue-400 transition-all duration-300 hover:scale-110">Início</a>
+                    <a href="#" class="hover:text-blue-400 transition-all duration-300 hover:scale-110">Projetos</a>
+                    <a href="#" class="hover:text-blue-400 transition-all duration-300 hover:scale-110">Serviços</a>
+                    <a href="#" class="hover:text-blue-400 transition-all duration-300 hover:scale-110">Sobre</a>
+                </div>
+                <button class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-md transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
+                    Contato
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative z-10 container mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 animate__animated animate__fadeInLeft">
+                <div class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-xl font-bold animate__animated animate__fadeInUp animate__delay-1s">
+                    TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL
+                </div>
+                <h1 class="text-5xl font-bold">
+                    <div class="animate__animated animate__fadeInUp animate__delay-2s">Olá, Somos</div>
+                    <div class="animate__animated animate__fadeInUp animate__delay-3s">
+                        <span class="text-500 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400">UrbanSense <br></span> 
+                        <span class="animate-pulse">Dados Ambientais</span>
+                    </div>
+                    <div class="animate__animated animate__fadeInUp animate__delay-4s">
+                        <span>Saas</span> on Demand
+                    </div>
+                </h1>
+                <p class="text-gray-400 text-lg animate__animated animate__fadeInUp animate__delay-5s">
+                    Especializado em buscar alternativas sustentáveis para o desenvolvimento de soluções tecnológicas.
+                </p>
+                <button class="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-md text-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 animate__animated animate__fadeInUp animate__delay-6s">
+                    <span class="group-hover:scale-110 inline-block transition-transform duration-300">Começar</span>
+                </button>
+            </div>
+            <div class="relative animate__animated animate__fadeInRight">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+                <div class="relative bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-full p-8 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
+                    <div class="relative">
+                        <div class="absolute top-0 right-0 -mr-4 mt-4">
+                            <div class="bg-white rounded-lg p-4 shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300">
+                                <div class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-2xl">&lt;/&gt;</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#4A90E2' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#4A90E2',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    repulse: { distance: 100, duration: 0.4 },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
